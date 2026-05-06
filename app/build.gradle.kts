@@ -20,7 +20,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-    applicationId = "com.enna.lite"
+        applicationId = "com.enna.lite"
         minSdk = 26
         targetSdk = 37
         versionCode = 2
@@ -137,6 +137,10 @@ android {
 
 kotlin {
     jvmToolchain(21)
+}
+
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 dependencies {
