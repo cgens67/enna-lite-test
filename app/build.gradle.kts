@@ -139,10 +139,6 @@ kotlin {
     jvmToolchain(21)
 }
 
-ksp {
-    arg("room.schemaLocation", "$projectDir/schemas")
-}
-
 dependencies {
     implementation(libs.guava)
     implementation(libs.coroutines.guava)
