@@ -1,0 +1,20 @@
+/*
+ * ArchiveTune Project Original (2026)
+ * Chartreux Westia (github.com/koiverse)
+ * Licensed Under GPL-3.0 | see git history for contributors
+ * Don't remove this copyright holder!
+ */
+
+
+
+
+package com.enna.lite.innertube.models.body
+
+import com.enna.lite.innertube.models.Context
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class GetSearchSuggestionsBody(
+    val context: Context,
+    val input: String,
+)
